@@ -1,0 +1,10 @@
+.DS_Store
+*.pyc
+*.pyo
+*.egg-info
+*.bak
+*.sql
+*.pid
+*.db
+*.sw[po]
+local*
