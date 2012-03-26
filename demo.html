@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>uEditor Demo</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="uEditor.js"></script>
+    <style type="text/css">
+    body {
+        font: 0.75em/1.5em 'Georgia','Verdana','Arial',sans-serif;
+        color: #333;
+    }
+    div.uEditor {
+        width: 800px;
+    }
+    </style>
+    <link rel="stylesheet" href="uEditor.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+    $(function() {
+        $('#demo').uEditor({
+            stylesheet : 'uEditorContent.css',
+            containerClass : 'uEditor',
+            uploadURL : '/upload'
+        });
+    });
+    </script>
+</head>
+<body>
+<textarea id="demo" name="content" rows="10" cols="30"></textarea>
+</body>
+</html>
