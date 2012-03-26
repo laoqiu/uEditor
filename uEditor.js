@@ -953,6 +953,7 @@
                     var url = prompt(editor.settings.translation.linkURL, "http://");
                     if (url != null) {			
                         editor.iframe.contentWindow.document.execCommand("CreateLink", false, url);
+                        selection.parentElement().target="_blank";
                         editor.toolbar.setState('link', "on");
                     }
                 }
@@ -1350,6 +1351,7 @@
                 'src',
                 'style',
                 'lang',
+                'target',
                 'width',
                 'height'
             ];
