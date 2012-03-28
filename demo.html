@@ -13,8 +13,13 @@
     div.uEditor {
         width: 800px;
     }
-    </style>
+</style>
+    <!--[if !IE]><!--> 
+    <link rel="stylesheet" href="uEditor_datauri.css" type="text/css" media="screen" />
+    <!--<![endif]-->
+    <!--[if IE]>
     <link rel="stylesheet" href="uEditor.css" type="text/css" media="screen" />
+    <![endif]-->
     <script type="text/javascript">
     $(function() {
         $('#demo').uEditor({
